@@ -1,0 +1,32 @@
+@import 'src/variable';
+
+.home {
+  margin-top: 200px;
+
+  &__logo {
+    width: 300px;
+  }
+
+  &__contain {
+    margin-top: 0.5rem;
+  }
+
+  &__button {
+    border-radius: .5rem;
+    border: 2px;
+    cursor: pointer;
+    color: $white;
+    margin: 10px;
+    font-size: 1rem;
+    padding: 1rem 2rem;
+    text-align: center;
+    background-color: $black;
+    a {
+      color: $white;
+    }
+  }
+  &__button a:hover {
+    color:$primary-color ;
+  }
+ 
+}

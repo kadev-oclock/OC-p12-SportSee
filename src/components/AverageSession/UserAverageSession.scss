@@ -1,0 +1,23 @@
+.activity {
+    margin-left: 200px;
+}
+.recharts-legend-wrapper{
+    top:  -50px!important;
+    display: flex;
+    justify-content: end;
+}
+
+
+
+.average {
+    background-color: #fe0101;
+    width: 27%;
+    border-radius: 7px;
+    & .legend {
+        margin-left: 10px;
+        padding-top: 10px;
+        text-align-last: left;
+        color: white;
+        font-family: "Roboto", sans-serif;
+    }
+}

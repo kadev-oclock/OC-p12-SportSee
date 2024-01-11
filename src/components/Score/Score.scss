@@ -1,0 +1,27 @@
+.pie {
+  position: relative;
+
+  p {
+    position: absolute;
+    top: 70px;
+    font-size: 1.5rem;
+    font-weight: 700;
+    left: 85px;
+
+  }
+
+  span {
+    color: #74798C;
+    font-size: 1rem;
+  }
+
+}
+.score {
+  position: absolute;
+  top:-25px;
+  left: 30px;
+  font-weight: 300;
+  font-size: 1.1rem;
+  color: #20253A;
+
+}
