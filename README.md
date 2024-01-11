@@ -14,7 +14,7 @@ This repo contains all the source code to install and launch the frontend part o
 
 ## Maquette Figma
 
-![maquette](C:\Users\33676\Desktop\OC-projet12\frontend\src\assets\image\dashboard.jpg)
+![maquette](https://github.com/kadev-oclock/OC-p12-SportSee/blob/main/src/assets/image/dashboard.jpg)
 [Lien Figma](https://www.figma.com/file/BMomGVZqLZb811mDMShpLu/UI-design-Sportify-FR?type=design&node-id=0-1&mode=design&t=8ZaPsQQaNfRrOpcF-0)
 
 ## 1. Installing and launching the frontend app
