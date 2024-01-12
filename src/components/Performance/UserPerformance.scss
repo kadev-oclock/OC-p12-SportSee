@@ -1,13 +1,17 @@
-.activity {
-  margin-left: 200px;
-}
 
+.recharts-text {
+  font-family: "Roboto", sans-serif!important;
+  font-size: 0.8rem!important;
+}
 .recharts-legend-wrapper {
   top: -50px !important;
   display: flex;
   justify-content: end;
 }
-
+.recharts-wrapper {
+  width: 270px;
+  height: 353px;
+}
 .legend {
   text-align-last: left;
   opacity: 2;
@@ -16,9 +20,10 @@
 .perf {
   background-color: #282D30;
   border-radius: 7px;
-
-  padding-top: 80px;
   padding-left: 15px;
+  @media screen and (max-width: 1024px) { 
+    padding-left: 0;
+  }
 
   & .legend {
     margin-left: 40px;

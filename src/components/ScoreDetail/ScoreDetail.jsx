@@ -46,7 +46,7 @@ function ScoreDetail({ userDetail }) {
 
 
   return (
-    <div className="container">
+    <>
       {chartData.map((data, index) => (
         <div className="container__icon" key={index}>
           <div>
@@ -60,7 +60,7 @@ function ScoreDetail({ userDetail }) {
           </div>
         </div>
       ))}
-    </div>
+    </>
   );
 }
 

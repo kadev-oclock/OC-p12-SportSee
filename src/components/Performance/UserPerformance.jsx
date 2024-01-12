@@ -39,11 +39,11 @@ function UserPerformance({ userPerformance }) {
 
   return (
     <div className="perf">
-      <ResponsiveContainer width="100%" height={300}>
+      <ResponsiveContainer width="326" height={380}>
         <div className="contain">
           <RadarChart
-            height={240}
-            width={270}
+            height={300}
+            width={280}
             outerRadius="80%"
             data={chartData}
           >

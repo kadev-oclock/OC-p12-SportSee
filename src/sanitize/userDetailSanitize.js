@@ -2,8 +2,11 @@ export class UserDetailSanitize {
   constructor(data) {
     this.userId = data && data.userId ? data.userId : 0;
     this.objectif = data && data.objectif ? data.objectif : 0;
-    this.name = data && data.name ? data.name : "beber";
-    this.todayScore = data && data.todayScore ? data.todayScore : 0;
+    this.userInfos = {}
+    this.userInfos.firstName = data && data.userInfos && data.userInfos.firstName ? data.userInfos.firstName : "beber";
+    this.userInfos.lastName = data && data.userInfos && data.userInfos.lastName ? data.userInfos.lastName : "test",
+    this.userInfos.age= data && data.userInfos && data.userInfos.age ? data.userInfos.age: 0,
+    this.todayScore = data && data.todayScore ? data.todayScore : data.score ? data.score:0;
 
     this.keyData = {}
     this.keyData.calorieCount= data && data.keyData && data.keyData.calorieCount?data.keyData.calorieCount:0
@@ -14,11 +17,7 @@ export class UserDetailSanitize {
   }
 }
 
-export class UserActivitySanitize {
-  constructor(data) {
-    this.userId = data && data.userId ? data.userId : 0;
-    this.sessions[{}]
-    
 
-  }
-}
+
+
+

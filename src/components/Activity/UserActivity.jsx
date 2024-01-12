@@ -47,7 +47,7 @@ function UserActivity({ userActivity }) {
     <div>
       <h2 className="legend">Activité quotidienne</h2>
       {chartData.length > 0 && (
-        <ResponsiveContainer width="50%" height={300}>
+        <ResponsiveContainer  height={300}>
           <BarChart barGap={8} data={chartData}>
             <CartesianGrid vertical={false} strokeDasharray="4 4" />
             <XAxis dataKey="day" />

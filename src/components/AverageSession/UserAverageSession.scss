@@ -1,6 +1,4 @@
-.activity {
-    margin-left: 200px;
-}
+
 .recharts-legend-wrapper{
     top:  -50px!important;
     display: flex;
@@ -11,13 +9,25 @@
 
 .average {
     background-color: #fe0101;
-    width: 27%;
+    min-width: 350px;
     border-radius: 7px;
+    @media screen and (max-width: 1024px) {
+        min-width: 307px;
+        height: 380px;
+        .recharts-wrapper {
+            max-width: 311px;
+        }
+        .legend {
+            font-size: 1.2rem;
+        }
+    }
+    
     & .legend {
         margin-left: 10px;
         padding-top: 10px;
         text-align-last: left;
         color: white;
+        opacity: .7;
         font-family: "Roboto", sans-serif;
     }
 }

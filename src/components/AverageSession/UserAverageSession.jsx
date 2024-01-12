@@ -48,7 +48,7 @@ function UserAverageSession({ userAverageSession }) {
 
       <ResponsiveContainer width="100%" height={300}>
         <LineChart
-          width={730}
+          width={500}
           height={250}
           data={chartData}
           margin={{ top: 5, right: 30, left: 20, bottom: 5 }}
