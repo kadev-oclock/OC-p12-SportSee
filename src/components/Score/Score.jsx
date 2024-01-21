@@ -4,7 +4,7 @@ import "./Score.scss";
 
 export default function Score({ userDetail }) {
   const todayScore = userDetail ? userDetail.todayScore : 0;
-  // Multipliez todayScore par 100 pour le convertir en pourcentage
+  // Multiplie todayScore par 100 pour le convertir en pourcentage
   const percentageScore = Math.round(todayScore * 100);
 
   const data = [{ value: percentageScore }];

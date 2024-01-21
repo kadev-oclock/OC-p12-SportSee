@@ -1,5 +1,4 @@
 /* eslint-disable no-console */
-// ici on fait les fetch et on charge les composants graphiqu
 import React from "react";
 import { useParams } from "react-router-dom";
 import { useState, useEffect } from "react";

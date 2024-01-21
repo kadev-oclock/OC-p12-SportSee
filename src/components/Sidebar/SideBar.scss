@@ -28,9 +28,9 @@
         font-size: .75rem;
         -webkit-transform: rotate(180deg);
         transform: rotate(180deg);
-        margin-top: auto; /* Pour pousser le texte vers le bas */
+        margin-top: auto; 
         align-items: center;
-        writing-mode: vertical-rl; /* vertical-rl ou vertical-lr selon la direction souhaitée */
+        writing-mode: vertical-rl; 
     }
 }
 

@@ -7,6 +7,7 @@ import {
   Tooltip,
   CartesianGrid,
   Legend,
+  Scatter,
   ResponsiveContainer,
 } from "recharts";
 import "./UserActivity.scss";
@@ -67,6 +68,7 @@ function UserActivity({ userActivity }) {
               fill="#E60000"
               radius={[50, 50, 0, 0]}
             />
+             <Scatter dataKey="day" fill="red" />
           </BarChart>
         </ResponsiveContainer>
       )}
