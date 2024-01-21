@@ -1,27 +1,35 @@
-
 .recharts-text {
-  font-family: "Roboto", sans-serif!important;
-  font-size: 0.8rem!important;
+  font-family: "Roboto", sans-serif !important;
+  font-size: 0.7rem !important;
 }
+
 .recharts-legend-wrapper {
   top: -50px !important;
   display: flex;
   justify-content: end;
 }
+
 .recharts-wrapper {
-  width: 270px;
+  width: 280px;
   height: 353px;
+
 }
+
+
 .legend {
   text-align-last: left;
   opacity: 2;
+}
+.contain {
+  padding: 10px;
 }
 
 .perf {
   background-color: #282D30;
   border-radius: 7px;
   padding-left: 15px;
-  @media screen and (max-width: 1024px) { 
+
+  @media screen and (max-width: 1024px) {
     padding-left: 0;
   }
 
