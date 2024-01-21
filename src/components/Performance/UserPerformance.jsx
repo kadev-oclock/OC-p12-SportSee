@@ -43,7 +43,7 @@ function UserPerformance({ userPerformance }) {
         <div className="contain">
           <RadarChart
             height={300}
-            width={280}
+            width={285}
             outerRadius="80%"
             data={chartData}
           >
