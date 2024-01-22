@@ -7,7 +7,9 @@ export default function Score({ userDetail }) {
   // Multiplie todayScore par 100 pour le convertir en pourcentage
   const percentageScore = Math.round(todayScore * 100);
 
-  const data = [{ value: percentageScore }];
+  const data = [{ value: percentageScore }, {value: 100 - percentageScore}];
+  
+
   const COLORS = ["#ff0000", "#eeeeee"]; // Couleur rouge pour la barre, couleur de fond grise
 
   return (
@@ -17,20 +19,30 @@ export default function Score({ userDetail }) {
         <Pie
           data={data}
           dataKey="value"
-          cx="50px"
-          cy="50px"
-          outerRadius={87}
-          innerRadius={74}
-          startAngle={45}
-          endAngle={250}
+          cx="50%"
+          cy="50%"
+          innerRadius={90}
+          outerRadius={100}
+          startAngle={90}
+          // endAngle={250}
           fill="#8884d8"
         >
+         < Pie
+            data={[{value: 100 - percentageScore}]}
+            dataKey={'value'}
+            cx='50%'
+            cy='50%'
+            innerRadius={0}
+            outerRadius={90}
+            fill='white'
+            // isAnimationActive={false}
+          />
           {data.map((entry, index) => (
             <Cell
             key={`cell-${index}`}
             fill={COLORS[index % COLORS.length]}
-            cornerRadius={10}
             style={{ outline: "none" }}
+            cornerRadius={10}
             />
             ))}
         </Pie>

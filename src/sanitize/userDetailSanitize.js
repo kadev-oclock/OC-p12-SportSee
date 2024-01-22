@@ -4,8 +4,8 @@ export class UserDetailSanitize {
     this.objectif = data && data.objectif ? data.objectif : 0;
     this.userInfos = {}
     this.userInfos.firstName = data && data.userInfos && data.userInfos.firstName ? data.userInfos.firstName : "beber";
-    this.userInfos.lastName = data && data.userInfos && data.userInfos.lastName ? data.userInfos.lastName : "test",
-    this.userInfos.age= data && data.userInfos && data.userInfos.age ? data.userInfos.age: 0,
+    this.userInfos.lastName = data && data.userInfos && data.userInfos.lastName ? data.userInfos.lastName : "test";
+    this.userInfos.age= data && data.userInfos && data.userInfos.age ? data.userInfos.age: 0;
     this.todayScore = data && data.todayScore ? data.todayScore : data.score ? data.score:0;
 
     this.keyData = {}
